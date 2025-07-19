@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <template id="template" xml:space="preserve">
+        <t t-name="point_of_sale.CustomControlButton" t-inherit="point_of_sale.ControlButtons" t-inherit-mode="extension">
+            <xpath expr="//SelectPartnerButton" position="after">
+                <button class="control-buttons btn btn-light" t-on-click="()=>console.log('Button is work!')">
+                    Custom Button
+                </button>
+            </xpath>
+        </t>
+    </template>
+
